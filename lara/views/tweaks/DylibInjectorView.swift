@@ -282,3 +282,5 @@ struct DylibInjectorView: View {
                 showAlert = true
             }
         }
+    }       // ← fecha inject()
+}           // ← fecha DylibInjectorView
