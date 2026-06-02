@@ -39,6 +39,9 @@ struct TweaksView: View {
                         .disabled(!mgr.sbxready)
                     NavigationLink("JIT Enabler", destination: JitView())
                         .disabled(!mgr.sbxready)
+                    NavigationLink("Dylib Injector", destination: DylibInjectorView())
+    .                   .disabled(!mgr.dsready)
+
                 }
                 
                 Section(header: HeaderLabel(text: "User Interface", icon: "eye")) {
