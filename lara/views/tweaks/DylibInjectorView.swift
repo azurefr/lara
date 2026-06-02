@@ -261,7 +261,7 @@ struct DylibInjectorView: View {
             let ret = dylibPath.withCString { cPath in
                 inject_dylib(rc, cPath)
             }
-            rc.destroyRemoteCall()
+            rc.destroy()
 
             DispatchQueue.main.async {
                 isInjecting = false
