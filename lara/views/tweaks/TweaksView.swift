@@ -40,7 +40,7 @@ struct TweaksView: View {
                     NavigationLink("JIT Enabler", destination: JitView())
                         .disabled(!mgr.sbxready)
                     NavigationLink("Dylib Injector", destination: DylibInjectorView())
-    .                   .disabled(!mgr.dsready)
+                        .disabled(!mgr.dsready)
 
                 }
                 
